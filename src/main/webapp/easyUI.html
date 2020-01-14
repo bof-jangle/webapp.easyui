@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>about easyUI</title>
-<link rel="stylesheet" type="text/css" href="/css/backSystem.css" />
+<link rel="stylesheet" type="text/css" href="css/backSystem.css" />
 </head>
 <body>
 	<div class="content">
@@ -11,7 +11,7 @@
 		</div>
 		<iframe id="rightIframe" name="rightIframe" width="100%" style="border:0px;height:1500px;" ></iframe>
 	</div>
-<script type="text/javascript" src="/js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
 <script type="text/javascript">
 	$(function(){
 		//获取easyUi列表
@@ -23,7 +23,7 @@
 			},
 			success:function(data){
 				for(var i=0;i<data.length;i++){
-					var div = '<div data-for="/easyui/demo/'+data[i]+'/basic.html">'+data[i]+'</div>';
+					var div = '<div data-for="easyui/demo/'+data[i]+'/basic.html">'+data[i]+'</div>';
 					$(".menuBox").append(div);
 				}
 			}
